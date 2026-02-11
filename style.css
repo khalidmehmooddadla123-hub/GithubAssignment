@@ -1,0 +1,161 @@
+/* Color Scheme */
+:root {
+  --primary: #1e3a8a;
+  --secondary: #2563eb;
+  --accent: #facc15;
+  --light: #f8fafc;
+  --dark: #0f172a;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--primary);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background-color: var(--accent);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: gray;
+  transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Skills - Flexbox */
+
+
+.skills {
+  width: 200px;
+  font-family: Arial, sans-serif;
+  margin: auto;
+}
+
+.skill {
+  margin-bottom: 8px;
+}
+
+.label {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 3px;
+  color: #444;
+}
+
+.bar {
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: #4caf50;
+  border-radius: 4px;
+}
+
+/* Education - Grid */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 700px;
+  margin: auto;
+  gap: 10px;
+}
+
+.education-grid div {
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.edu-header {
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--dark);
+  color: white;
+}
+
+
+
